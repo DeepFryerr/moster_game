@@ -1,0 +1,97 @@
+body{
+    font-family: 'roboto', arial, sans-serif
+    display flex;
+    justify-content : center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+
+}
+#start-screen{
+    background-image: url('images/background.png');
+    background-repeat: repeat-y;
+    background-size: 900px auto;
+    background-position: center;
+    color:aquamarine;
+    padding: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+
+
+}
+h1, h2, p{
+    text-align: center;
+    position:  relative;
+    width:  100%;
+    margin: 20px 0;
+
+}
+
+#game-screen {
+    display: none;
+    position: relative;
+}
+#score-board{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    color: aliceblue;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+
+}
+
+#game-container {
+    display: grid;
+    gap: 0;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+    border: 2px solid #333;
+    padding: 0;
+    background-color: rgba(221, 221, 221, 0.8);
+}
+.cell {
+  width: 50px;
+height: 50px;
+display: flex; 
+align-items: center;
+justify-content: center;
+}
+.wall {
+background-image: url('images/wall.png');
+ background-size: cover;
+}
+
+.player {
+    background-image: url('images/player.png');
+     background-size: cover;
+    }
+.monster {
+    background-image: url('images/hornmonster.png');
+    background-size: cover;
+}
+.bullet {
+    background-color: red;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+
+}
